@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: 600;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    border-radius: .5em;
+    transition: transform .3s;
+}
+
+img:hover {
+    box-shadow: 10px 10px 10px #707b7c;
+    transform: scale(1.1);
+}
+
+video {
+    transition: transform .3s;
+    border-radius: .5em;
+}
+
+video:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px #707b7c;
+}
+
+.topnav,
+.home {
+    animation: fadeIn 1s forwards;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: .3em;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #212f3c;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a:not(:first-child) {
+    display: none;
+}
+
+.topnav a.icon {
+    float: right;
+    display: block;
+}
+
+.topnav.responsive {
+    position: relative;
+}
+
+.topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+.home {
+    background: url(images/fardil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 70%;
+    color: white;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.home h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 2.8em;
+}
+
+.about {
+    background: url(images/pexels-wendy-wei-4000421.jpg);
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: .3em;
+}
+
+.about p {
+    text-align: justify;
+    margin-bottom: 1.5em;
+}
+
+.about h2 {
+    font-size: 2em;
+    position: relative;
+    margin-bottom: 1em;
+    z-index: 1;
+}
+
+.about h2::before {
+    background: #707b7c;
+    content: '';
+    width: 3em;
+    height: .4em;
+    position: absolute;
+    bottom: 0;
+    margin-left: -.2em;
+    z-index: -1;
+}
+
+.about .short-term-goal {
+    margin-bottom: 2em;
+}
+
+.about .long-term-goal {
+    margin-bottom: 2em;
+}
+
+.works-skills {
+    background-color: #d5f5e3;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: .3em;
+}
+
+.works-skills h2 {
+    font-size: 2em;
+    position: relative;
+    margin-bottom: 1em;
+    z-index: 2;
+}
+
+.works-skills h2::before {
+    background: #707b7c;
+    content: '';
+    width: 2.7em;
+    height: .4em;
+    position: absolute;
+    bottom: 0;
+    margin-left: -.2em;
+    z-index: -1;
+}
+
+table {
+    font-weight: 500;
+}
+
+table.work-table {
+    margin-bottom: 2em;
+}
+
+table.skill-table {
+    margin-bottom: 2em;
+}
+
+.images * {
+    margin: .6em 0;
+}
+
+.contact {
+    background-color: #212f3c;
+    color: white;
+    text-align: center;
+    padding: 0 1em;
+}
+
+.contact h2 {
+    font-size: 2em;
+    position: relative;
+    margin-bottom: 1em;
+    z-index: 1;
+}
+
+.contact h2::before {
+    background: #707b7c;
+    content: '';
+    width: 4em;
+    height: .4em;
+    position: absolute;
+    bottom: 0;
+    margin-left: -.2em;
+    z-index: -1;
+}
+
+.contact * {
+    margin: .3em;
+}
+
+.contact form {
+    background-color: white;
+    color: #212f3c;
+    border-radius: .5em;
+    margin-bottom: 2em;
+}
+
+.contact form * {
+    margin: .5em;
+    text-align: center;
+}
+
+input[type="submit"] {
+    font-weight: 500;
+    font-size: 1em;
+    background-color: #212f3c;
+    color: white;
+    padding: .5em;
+    border-radius: .5em;
+    transition: transform .3s;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.3);
+}
+
+.contact i {
+    font-size: 1.5em;
+    color: white;
+}
+
+@media screen and (min-width: 990px) {
+    .bottom-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about,
+    .works-skills {
+        width: 90%;
+    }
+    .upper-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .upper-about p {
+        width: 50%;
+        text-align: center;
+    }
+    .works-skills {
+        display: grid;
+        grid-template-areas: "works skills" "gallery gallery";
+        column-gap: 1em;
+    }
+    .works {
+        grid-area: works;
+    }
+    .skills {
+        grid-area: skills;
+    }
+    .gallery {
+        grid-area: gallery;
+    }
+    .gallery * {
+        margin: 1em;
+    }
+    .contact {
+        display: grid;
+        grid-template-areas: "title title" "contact form";
+    }
+    .contact h2 {
+        grid-area: title;
+    }
+    .left-contact {
+        grid-area: contact;
+    }
+    .contact form {
+        grid-area: form;
+    }
+    .contact form {
+        width: 80%;
+    }
+    .contact .left-contact * {
+        padding: .5em;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
